@@ -10,7 +10,7 @@ static int proc_count(struct seq_file *m, void *v){
 	int count =0;
 	struct task_struct* p;
 	for_each_process(p) count++;
-	seq_printf(m, "%d\n", count-1);
+	seq_printf(m, "%d\n", count);
 	return 0;
 }
 
@@ -30,6 +30,6 @@ static void __exit proc_count_exit(void)
 module_init(proc_count_init);
 module_exit(proc_count_exit);
 
-MODULE_AUTHOR("Your Name");
+MODULE_AUTHOR("Kevin Xue");
 MODULE_DESCRIPTION("CS111 lab0 count proc number");
 MODULE_LICENSE("GPL");

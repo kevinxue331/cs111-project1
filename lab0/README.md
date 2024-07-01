@@ -3,12 +3,14 @@ TODO: intro
 
 ## Building
 ```shell
-TODO: cmd for build
+make
+sudo insmod proc_count.ko
 ```
 
 ## Running
 ```shell
-TODO: cmd for running binary
+cat proc/count
+returns numbers of processes running in decimal purchase 
 ```
 TODO: results?
 
