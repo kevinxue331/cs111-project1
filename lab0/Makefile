@@ -6,7 +6,7 @@ KDIR ?= /lib/modules/`uname -r`/build
 default:
 	$(MAKE) -C $(KDIR) M=$$PWD modules
 
-modules_install:
+modules_install: 
 	$(MAKE) -C $(KDIR) M=$$PWD modules_install
 
 install:
