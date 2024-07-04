@@ -10,22 +10,24 @@ sudo insmod proc_count.ko to activate the kernel
 ## Running
 ```shell
 cat proc/count
-returns numbers of processes running in 
+returns numbers of processes running by running the code
 ```
 Results: passes all 3 tests
 
 ## Cleaning Up
 ```shell
 cmd for cleaning the built binary
-make clean removes the code made
+make clean deletes the compiled kernel code
+sudo rmmod proc_count.ko deactivates the kernel
 
 ```
 
 ## Testing
 ```python
 python -m unittest
+this runs the given test cases using python, the -m flag specifies a kernel module being run 
 ```
-TODO: results?
+
 
 Report which kernel release version you tested your module on
 (hint: use `uname`, check for options with `man uname`).
