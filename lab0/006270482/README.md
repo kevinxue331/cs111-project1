@@ -4,7 +4,7 @@ This project is project 0 of CS111, the goal was to write a linux kernel in c to
 ## Building
 ```shell
 make
-sudo insmod proc_count.ko //to activate the kernel
+sudo insmod proc_count.ko to activate the kernel
 ```
 
 ## Running
@@ -17,20 +17,21 @@ Results: passes all 3 tests
 ## Cleaning Up
 ```shell
 cmd for cleaning the built binary
-make clean //deletes the compiled kernel code
-sudo rmmod proc_count //eactivates the kernel
+make clean deletes the compiled kernel code
+sudo rmmod proc_count.ko deactivates the kernel
 
 ```
 
 ## Testing
 ```python
 python -m unittest
-//this runs the given test cases using python, the -m flag specifies a kernel module being run 
+this runs the given test cases using python, the -m flag specifies a kernel module being run 
 ```
 
 
 Report which kernel release version you tested your module on
-
+(hint: use `uname`, check for options with `man uname`).
+It should match release numbers as seen on https://www.kernel.org/.
 
 ```shell
 Ran on 5.14.8-arch1-1 Linux #1 SMP PREEMPT 9/26/21
